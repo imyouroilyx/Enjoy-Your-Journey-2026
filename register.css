@@ -193,6 +193,19 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23ffcc00'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23fff5cc'/%3E%3C/svg%3E");
 }
 
+/* 7. ธีมสีแดง */
+.journey2026-theme-red {
+    --bg-main: #e63946;
+    --bg-wave: #f1faee;
+    --divider: #b91d2a;
+    --text-label: #8b0000;
+    --text-value: #1d3557;
+    --input-bg: #ffffff;
+}
+.journey2026-theme-red .journey2026-wave {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23e63946'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23f1faee'/%3E%3C/svg%3E");
+}
+
 /* =========================================
    Responsive มือถือ
    ========================================= */
