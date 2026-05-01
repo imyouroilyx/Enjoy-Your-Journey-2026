@@ -1,4 +1,5 @@
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
 /* โครงสร้างการ์ดหลัก */
 .journey2026-card {
     width: 100%;
@@ -8,7 +9,7 @@
     background-color: var(--bg-wave);
     overflow: hidden;
     position: relative;
-    font-family: 'Google Sans 2026', 'Google Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,7 +17,7 @@
     background-color: var(--bg-main);
 }
 
-/* ส่วนหัว */
+/* ส่วนหัว - ปรับตามค่าใหม่ของคุณ */
 .journey2026-header {
     text-align: center;
     padding-top: 30px;
@@ -88,7 +89,7 @@
 
 .journey2026-label {
     color: var(--text-label);
-    font-size: 1.5em;
+    font-size: 1.5em; /* ขนาดใหม่ตามที่คุณแก้ */
     font-weight: bold;
 }
 
@@ -112,117 +113,30 @@
     background-repeat: repeat-x;
 }
 
-/* =========================================
-   THEMES (ธีมสีต่างๆ พร้อม SVG คลื่นในตัว)
-   ========================================= */
+/* THEMES */
+.journey2026-theme-pink { --bg-main: #fb529d; --bg-wave: #ffefcc; --divider: #c0467a; --text-label: #a2245b; --text-value: #4a1c2e; --input-bg: #f2f2f2; }
+.journey2026-theme-pink .journey2026-wave { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23fb529d'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23ffefcc'/%3E%3C/svg%3E"); }
 
-/* 1. ธีมสีชมพู */
-.journey2026-theme-pink {
-    --bg-main: #fb529d;
-    --bg-wave: #ffefcc;
-    --divider: #c0467a;
-    --text-label: #a2245b;
-    --text-value: #4a1c2e;
-    --input-bg: #f2f2f2;
-}
-.journey2026-theme-pink .journey2026-wave {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23fb529d'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23ffefcc'/%3E%3C/svg%3E");
-}
+.journey2026-theme-blue { --bg-main: #4da6ff; --bg-wave: #f0f7ff; --divider: #287acc; --text-label: #1a4d80; --text-value: #0d2640; --input-bg: #ffffff; }
+.journey2026-theme-blue .journey2026-wave { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%234da6ff'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23f0f7ff'/%3E%3C/svg%3E"); }
 
-/* 2. ธีมสีฟ้า */
-.journey2026-theme-blue {
-    --bg-main: #4da6ff;
-    --bg-wave: #f0f7ff;
-    --divider: #287acc;
-    --text-label: #1a4d80;
-    --text-value: #0d2640;
-    --input-bg: #ffffff;
-}
-.journey2026-theme-blue .journey2026-wave {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%234da6ff'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23f0f7ff'/%3E%3C/svg%3E");
-}
+.journey2026-theme-green { --bg-main: #47d18a; --bg-wave: #eefbee; --divider: #29a35a; --text-label: #176635; --text-value: #0a331a; --input-bg: #ffffff; }
+.journey2026-theme-green .journey2026-wave { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%2347d18a'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23eefbee'/%3E%3C/svg%3E"); }
 
-/* 3. ธีมสีเขียว */
-.journey2026-theme-green {
-    --bg-main: #47d18a;
-    --bg-wave: #eefbee;
-    --divider: #29a35a;
-    --text-label: #176635;
-    --text-value: #0a331a;
-    --input-bg: #ffffff;
-}
-.journey2026-theme-green .journey2026-wave {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%2347d18a'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23eefbee'/%3E%3C/svg%3E");
-}
+.journey2026-theme-purple { --bg-main: #9b51e0; --bg-wave: #f6f0ff; --divider: #6b2eb3; --text-label: #4a148c; --text-value: #290054; --input-bg: #ffffff; }
+.journey2026-theme-purple .journey2026-wave { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%239b51e0'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23f6f0ff'/%3E%3C/svg%3E"); }
 
-/* 4. ธีมสีม่วง */
-.journey2026-theme-purple {
-    --bg-main: #9b51e0;
-    --bg-wave: #f6f0ff;
-    --divider: #6b2eb3;
-    --text-label: #4a148c;
-    --text-value: #290054;
-    --input-bg: #ffffff;
-}
-.journey2026-theme-purple .journey2026-wave {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%239b51e0'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23f6f0ff'/%3E%3C/svg%3E");
-}
+.journey2026-theme-dark { --bg-main: #2b2b2b; --bg-wave: #1a1a1a; --divider: #444444; --text-label: #aaaaaa; --text-value: #ffffff; --input-bg: #3d3d3d; }
+.journey2026-theme-dark .journey2026-wave { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%232b2b2b'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%231a1a1a'/%3E%3C/svg%3E"); }
 
-/* 5. ธีมสีเข้ม (Dark Mode) */
-.journey2026-theme-dark {
-    --bg-main: #2b2b2b;
-    --bg-wave: #1a1a1a;
-    --divider: #444444;
-    --text-label: #aaaaaa;
-    --text-value: #ffffff;
-    --input-bg: #3d3d3d;
-}
-.journey2026-theme-dark .journey2026-wave {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%232b2b2b'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%231a1a1a'/%3E%3C/svg%3E");
-}
+.journey2026-theme-yellow { --bg-main: #ffcc00; --bg-wave: #fff5cc; --divider: #e6b800; --text-label: #997a00; --text-value: #332900; --input-bg: #ffffff; }
+.journey2026-theme-yellow .journey2026-wave { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23ffcc00'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23fff5cc'/%3E%3C/svg%3E"); }
 
-/* 6. ธีมสีเหลือง */
-.journey2026-theme-yellow {
-    --bg-main: #ffcc00;
-    --bg-wave: #fff5cc;
-    --divider: #e6b800;
-    --text-label: #997a00;
-    --text-value: #332900;
-    --input-bg: #ffffff;
-}
-.journey2026-theme-yellow .journey2026-wave {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23ffcc00'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23fff5cc'/%3E%3C/svg%3E");
-}
+.journey2026-theme-red { --bg-main: #e63946; --bg-wave: #f1faee; --divider: #b91d2a; --text-label: #8b0000; --text-value: #1d3557; --input-bg: #ffffff; }
+.journey2026-theme-red .journey2026-wave { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23e63946'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23f1faee'/%3E%3C/svg%3E"); }
 
-/* 7. ธีมสีแดง */
-.journey2026-theme-red {
-    --bg-main: #e63946;
-    --bg-wave: #f1faee;
-    --divider: #b91d2a;
-    --text-label: #8b0000;
-    --text-value: #1d3557;
-    --input-bg: #ffffff;
-}
-.journey2026-theme-red .journey2026-wave {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23e63946'/%3E%3Cpath d='M0 40 L0 20 Q25 10 50 20 T100 20 T150 20 T200 20 T250 20 T300 20 T350 20 T400 20 T450 20 T500 20 T550 20 T600 20 T650 20 T700 20 T750 20 T800 20 T850 20 T900 20 T950 20 T1000 20 L1000 40 Z' fill='%23f1faee'/%3E%3C/svg%3E");
-}
-
-/* =========================================
-   Responsive มือถือ
-   ========================================= */
 @media (max-width: 600px) {
-    .journey2026-body {
-        flex-direction: column;
-        align-items: center;
-        padding: 25px;
-    }
-
-    .journey2026-avatar-sec {
-        margin-bottom: 15px;
-        flex: 0 0 auto;
-    }
-
-    .journey2026-info-sec {
-        width: 100%;
-    }
+    .journey2026-body { flex-direction: column; align-items: center; padding: 25px; }
+    .journey2026-avatar-sec { margin-bottom: 15px; flex: 0 0 auto; }
+    .journey2026-info-sec { width: 100%; }
 }
