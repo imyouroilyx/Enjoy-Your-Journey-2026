@@ -1,0 +1,87 @@
+/* นำเข้าฟอนต์ Google Sans และ Chonburi เผื่อไว้ใน CSS ด้วยเพื่อความชัวร์ */
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+.journey_container {
+    margin: auto;
+    width: 80%;
+    font-family: 'Google Sans', sans-serif; /* เปลี่ยนจาก Bai Jamjuree เป็น Google Sans */
+    border: 1px solid #ac6100;
+    box-shadow: 0 0 30px black;
+    background: url('https://64.media.tumblr.com/e71d3ce26dc8047664b681e1c62326b7/6e3707da42ee0d9f-08/s1280x1920/c0056fdfb954a0eec9319ee31aaa70faf8fb57dd.gif') repeat, url('https://i.imgur.com/ED0Pmpr.png') repeat;
+    background-blend-mode: screen;
+}
+
+.journey_overlay {
+    margin: auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.4));
+    background-attachment: scroll;
+    color: #cfcfcf; /* แก้จาก text-color เป็น color */
+}
+
+.journey_header_img {
+    height: 500px;
+    /* ใช้ตัวแปร --journey-bg เพื่อรับค่า URL ภาพจาก HTML ทำให้เปลี่ยนภาพง่ายขึ้น */
+    background: var(--journey-bg, url('https://iili.io/BZGWrUN.png')) center/cover, url('https://64.media.tumblr.com/6fa9ad9f859cf058bfe19a2536b0aa11/tumblr_pkv647vWBM1xp1j77o1_540.gif') center/cover;
+    background-blend-mode: screen;
+    border-radius: 5px;
+    -webkit-mask-image: -webkit-gradient(linear, center 50%, center 100%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.0)));
+}
+
+.journey_title {
+    margin: auto;
+    text-align: center;
+    font-size: 52pt;
+    margin-top: -120px;
+    font-family: 'Chonburi', serif;
+    color: white;
+    text-shadow: 0px 0px 20px #b1dbfd;
+}
+
+.journey_content {
+    margin: auto;
+    width: 78%;
+    text-align: justify;
+    color: #fff;
+    margin-top: 10px;
+    text-shadow: 0px 0px 10px #fff;
+    font-size: 13pt;
+    text-indent: 40px;
+}
+
+.journey_command_box {
+    margin: auto;
+    text-indent: 0px;
+    padding: 20px;
+    background: rgba(56,101,138,0.3);
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.journey_command_badge {
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin-top: -45px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.journey_command_text {
+    margin: auto;
+    text-align: center;
+}
+
+.journey_footer_logo {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    text-indent: 0px;
+    margin-top: 40px;
+}
+
+.journey_footer_logo img {
+    max-width: 100%;
+}
