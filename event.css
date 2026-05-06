@@ -5,7 +5,6 @@
     margin: auto;
     width: 80%;
     font-family: 'Google Sans', sans-serif; /* เปลี่ยนจาก Bai Jamjuree เป็น Google Sans */
-    border: 1px solid #ac6100;
     box-shadow: 0 0 30px black;
     background: url('https://64.media.tumblr.com/e71d3ce26dc8047664b681e1c62326b7/6e3707da42ee0d9f-08/s1280x1920/c0056fdfb954a0eec9319ee31aaa70faf8fb57dd.gif') repeat, url('https://i.imgur.com/ED0Pmpr.png') repeat;
     background-blend-mode: screen;
